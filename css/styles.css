@@ -1,0 +1,21 @@
+h1 {
+    position: relative;
+    text-align:center;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+.row > div {
+    border: 2px solid red;
+    background-color: gray;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+.container .mark {
+    background-color: blue;
+    position: relative;
+    text-align: above;
+}
+
