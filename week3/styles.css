@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
-    color: #fff; /*font color*/
+    color: #fff;
+    /*font color*/
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
 }
@@ -47,7 +48,8 @@ body {
     padding-top: 25px;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover,
+.navbar-brand a:focus {
     text-decoration: none;
 }
 
@@ -81,4 +83,146 @@ body {
     color: #557c3e;
     text-align: right;
     padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container .jumbotron {
+        background: url('./images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background: url(/img/jiaran.jpg) no-repeat;
+        background-size: 100px 100px;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+
+    .container .jumbotron {
+        background: url('./images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+
+/* small */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {
+        background: url('./images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+
+/* extra small */
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    .navbar-brand h1 {
+        padding-top: 10px;
+        /* 1vw = 1% of viewport width */
+        font-size: 5vw;
+    }
+
+    .navbar-brand p {
+        text-transform: uppercase;
+        font-size: .6em;
+        margin-top: 12px;
+    }
+
+    .navbar-brand p img {
+        height: 20px;
+    }
+
+    #collapsable-nav a {
+        font-size: 1.8em;
+    }
+
+    #collapsable-nav a span {
+        margin-right: 5px;
+    }
+
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+    }
+}
+
+#call-btn {
+    background-color: #f6b319;
+    margin: 10px 10px 10px 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#call-btn a {
+    font-size: 16px;
+    color: #61122f
+}
+
+#menu-tile,
+#specials-tile,
+#map-tile {
+    /* container size */
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url('./images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#specials-tile {
+    background: url('./images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
 }
