@@ -170,7 +170,37 @@ body {
         box-shadow: 0 0 50px #3f0c1f;
         border: 2px solid #3f0c1f;
     }
+
+    a #menu-tile,
+    a #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .panel-footer section hr {
+        width: 50%;
+    }
+
 }
+
+@media (max-width: 479px) {
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+
+    a #menu-tile,
+    a #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+}
+
 
 #call-btn {
     background-color: #f6b319;
@@ -225,4 +255,36 @@ body {
     background-color: #000;
     color: #fff;
     opacity: .8;
+}
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours,
+#address {
+    line-height: 2;
+}
+
+#hours > span,
+#address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
 }
